@@ -16,7 +16,7 @@ class LBFMListenRecommendController: UIViewController,LTTableViewProtocal {
         let tableView = tableViewConfig(CGRect(x: 0, y: 0, width:LBFMScreenWidth, height: LBFMScreenHeight - LBFMTabBarHeight - LBFMNavBarHeight), self, self, nil)
         tableView.register(LBFMListenRecommendCell.self, forCellReuseIdentifier: LBFMListenRecommendCellID)
         tableView.backgroundColor = UIColor.init(r: 240, g: 241, b: 244)
-        // tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        // tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         return tableView
     }()
     
@@ -59,7 +59,7 @@ extension LBFMListenRecommendController : UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:LBFMListenRecommendCell = tableView.dequeueReusableCell(withIdentifier: LBFMListenRecommendCellID, for: indexPath) as! LBFMListenRecommendCell
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.albums = viewModel.albums?[indexPath.row]
         return cell
     }

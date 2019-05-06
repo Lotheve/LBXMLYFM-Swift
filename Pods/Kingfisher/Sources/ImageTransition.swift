@@ -54,7 +54,7 @@ Transition effect which will be used when an image downloaded and set by `UIImag
 You can assign an enum value with transition duration as an item in `KingfisherOptionsInfo` 
 to enable the animation transition.
 
-Apple's UIViewAnimationOptions is used under the hood.
+Apple's UIView.AnimationOptions is used under the hood.
 For custom transition, you should specified your own transition options, animations and 
 completion handler as well.
 */

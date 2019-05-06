@@ -21,7 +21,7 @@ class LBFMListenSubscibeController: UIViewController , LTTableViewProtocal{
         let tableView = tableViewConfig(CGRect(x: 0, y: 0, width:LBFMScreenWidth, height: LBFMScreenHeight - 64), self, self, nil)
         tableView.register(LBFMListenSubscibeCell.self, forCellReuseIdentifier: LBFMListenSubscibeCellID)
         tableView.backgroundColor = UIColor.init(r: 240, g: 241, b: 244)
-        //  tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        //  tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.tableFooterView = self.footerView
         return tableView
     }()
@@ -65,7 +65,7 @@ extension LBFMListenSubscibeController : UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:LBFMListenSubscibeCell = tableView.dequeueReusableCell(withIdentifier: LBFMListenSubscibeCellID, for: indexPath) as! LBFMListenSubscibeCell
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.albumResults = viewModel.albumResults?[indexPath.row]
         return cell
     }

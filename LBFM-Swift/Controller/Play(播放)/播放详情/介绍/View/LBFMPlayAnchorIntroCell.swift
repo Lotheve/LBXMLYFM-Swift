@@ -36,11 +36,11 @@ class LBFMPlayAnchorIntroCell: UITableViewCell {
     // 加关注
     private lazy var attentionBtn:UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named: "np_headview_nofollow_n_23x36_"), for: UIControlState.normal)
+        button.setImage(UIImage(named: "np_headview_nofollow_n_23x36_"), for: UIControl.State.normal)
         return button
     }()
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
         setUpUI()
     }

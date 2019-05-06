@@ -71,7 +71,7 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 @property (assign, nonatomic) NSTimeInterval fadeInAnimationDuration UI_APPEARANCE_SELECTOR;    // default is 0.15
 @property (assign, nonatomic) NSTimeInterval fadeOutAnimationDuration UI_APPEARANCE_SELECTOR;   // default is 0.15
 
-@property (assign, nonatomic) UIWindowLevel maxSupportedWindowLevel; // default is UIWindowLevelNormal
+@property (assign, nonatomic) UIWindowLevel maxSupportedWindowLevel; // default is UIWindow.Level.normal
 
 @property (assign, nonatomic) BOOL hapticsEnabled;	// default is NO
 
@@ -101,7 +101,7 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 + (void)setMaximumDismissTimeInterval:(NSTimeInterval)interval;     // default is infinite
 + (void)setFadeInAnimationDuration:(NSTimeInterval)duration;        // default is 0.15 seconds
 + (void)setFadeOutAnimationDuration:(NSTimeInterval)duration;       // default is 0.15 seconds
-+ (void)setMaxSupportedWindowLevel:(UIWindowLevel)windowLevel;      // default is UIWindowLevelNormal
++ (void)setMaxSupportedWindowLevel:(UIWindowLevel)windowLevel;      // default is UIWindow.Level.normal
 + (void)setHapticsEnabled:(BOOL)hapticsEnabled;						// default is NO
 
 #pragma mark - Show Methods

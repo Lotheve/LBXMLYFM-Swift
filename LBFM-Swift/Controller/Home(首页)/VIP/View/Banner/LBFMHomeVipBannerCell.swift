@@ -31,7 +31,7 @@ class LBFMHomeVipBannerCell: UITableViewCell {
         return pagerView
     }()
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
         self.addSubview(self.pagerView)
         self.pagerView.snp.makeConstraints { (make) in

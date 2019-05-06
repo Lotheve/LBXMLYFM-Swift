@@ -1716,6 +1716,7 @@
 				TargetAttributes = {
 					3A1400602202D61D00C98D59 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -2153,7 +2154,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liubo.lbfm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2178,7 +2179,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liubo.lbfm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
